@@ -1,0 +1,26 @@
+fred <- new turtle
+steps <- 50
+myList <- [1, 2, 3, 4]
+
+true
+false
+
++ - / *
+
+=
+!=
+<=
+>=
+
+repeat 5:
+  fred.forward(steps).turn(90)
+endrepeat
+
+func name(arg1, arg2):
+  stuff...
+endfunc
+
+
+for (item,index in myList):
+  stuff
+endfor
