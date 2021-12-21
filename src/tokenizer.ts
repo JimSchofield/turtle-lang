@@ -23,11 +23,18 @@ export default class Tokenizer {
   start = 0;
   line = 1;
   keywords = new Map(keywordsMap);
+
+  reset() {
+    this.current = 0;
+    this.start = 0;
+    this.line = 1;
+    this.tokens = []
+  }
   
   scan(source: string) {
-    this.source = source;
+    this.reset();
 
-    console.log(this.source);
+    this.source = source;
 
     return this.scanLoop();
   }
